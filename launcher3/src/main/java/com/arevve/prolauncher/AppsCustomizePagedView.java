@@ -342,7 +342,7 @@ public class AppsCustomizePagedView extends PagedViewWithDraggableItems implemen
         LauncherAppState app = LauncherAppState.getInstance();
         DeviceProfile grid = app.getDynamicGrid().getDeviceProfile();
         mCellCountX = (int) grid.allAppsNumCols;
-        mCellCountY = (int) grid.allAppsNumRows;
+        mCellCountY = (int) grid.allAppsNumRows - 1;
         updatePageCounts();
 
         // Force a measure to update recalculate the gaps
